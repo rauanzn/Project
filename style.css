@@ -1,0 +1,68 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: cursive;
+    margin: -10px;
+    padding-right: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.navbar a {
+    float: right;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.menu {
+    float: right;
+    overflow: hidden;
+}
+
+.menu .menubtn {
+	cursor: pointer;
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 12px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .menu:hover .menubtn, .menubtn:focus {
+    background-color: red;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu-content a {
+    float: none;
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.menu-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+.badge{
+	width: 45px;
+}
