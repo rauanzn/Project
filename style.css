@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -65,4 +68,41 @@
 }
 .badge{
 	width: 45px;
+}
+
+.bckimg img{
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+.menuclass{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.burger{
+    height:400px;
+    width: 280px;
+}
+.burger img{
+    min-height: 60%;
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+.burger div{
+    height: 40%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-weight: italic;
+}
+.burger:hover{
+    border: 2px solid black;
+}
+span h3{
+    text-align: center;
 }
