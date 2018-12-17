@@ -2,9 +2,27 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Roboto" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	<script>
+  	$(document).ready(function(){
+  $(".burger").click(function(){
+  	if($(this.childNodes[3]).is(":hidden")){
+  	$(this.childNodes[0]).hide();
+  	$(this.childNodes[1]).hide();
+    $(this.childNodes[3]).show();}
+    else{
+    $(this.childNodes[0]).show();
+  	$(this.childNodes[1]).show();
+    $(this.childNodes[3]).hide();
+    }
+  });
+});
+</script>
 </head>
 <body>
-	<script src="index.js" defer></script>
+
 <div class="navbar">
 	<img src="yy.jpg" class="badge" style="margin-left: 50px;">
 	<a href="#ABOUT_US">NEWS</a>
@@ -15,22 +33,66 @@
 	    </button>
 	    <div class="menu-content" id="menu">
 	      <a href="#">BURGER</a>
-	      <a href="#">PRIME MENU</a>
+	      <a href="#">HOT-DOG</a>
 	     
 		</div>
 	</div>
+
 	<a href="#ABOUT_US">ABOUT US</a>
-	
 </div>
-<div class="bckimg">
-	<img src="https://s3.amazonaws.com/backyardburgers.com/_1200x465_crop_top-center_100/main-hero-burger.png?mtime=20160801100044">
+<div class="burgers">
+	<div class="burger"><img src="b1.jpg"><div class="description"><div class="name">Buzova Burger</div><div class="price">890 TG</div><a href="">More</a></div>
+	<div class="effect"><ul>
+  <li><strong>CSS Design</strong> <em>250<sup>95</sup></em></li>
+  <li><strong>CSS Design</strong> <em>250<sup>95</sup></em></li>
+  <li><strong>CSS Design</strong> <em>250<sup>95</sup></em></li>
+  <li><strong>CSS Design</strong> <em>250<sup>95</sup></em></li>
+  <li><strong>CSS Design</strong> <em>250<sup>95</sup></em></li>
+</ul></div></div>
+	<div class="burger"><img src="b2.jpg"><div class="description"><div class="name">Naruto Burger</div><div class="price">1090 TG</div><a href="">More</a></div>
+	<div class="effect"><ul>
+  <li><strong>CSS Design</strong> <em>250<sup>95</sup></em></li>
+  <li><strong>CSS Design</strong> <em>250<sup>95</sup></em></li>
+  <li><strong>CSS Design</strong> <em>250<sup>95</sup></em></li>
+  <li><strong>CSS Design</strong> <em>250<sup>95</sup></em></li>
+  <li><strong>CSS Design</strong> <em>250<sup>95</sup></em></li>
+</ul></div></div>
+	<div class="burger"><img src="b3.jpg"><div class="description"><div class="name">AlPacino Burger</div><div class="price">1190 TG</div><a href="">More</a> </div>
+	<div class="effect"><ul>
+  <li><strong>CSS Design</strong> <em>250<sup>95</sup></em></li>
+  <li><strong>CSS Design</strong> <em>250<sup>95</sup></em></li>
+  <li><strong>CSS Design</strong> <em>250<sup>95</sup></em></li>
+  <li><strong>CSS Design</strong> <em>250<sup>95</sup></em></li>
+  <li><strong>CSS Design</strong> <em>250<sup>95</sup></em></li>
+</ul> </div> </div>
+	<div class="burger"><img src="b4.jpg"><div class="description"><div class="name">Trump Burger</div><div class="price">1290 TG</div><a href="">More</a></div>
+	<div class="effect"><ul>
+  <li><strong>CSS Design</strong> <em>250<sup>95</sup></em></li>
+  <li><strong>CSS Design</strong> <em>250<sup>95</sup></em></li>
+  <li><strong>CSS Design</strong> <em>250<sup>95</sup></em></li>
+  <li><strong>CSS Design</strong> <em>250<sup>95</sup></em></li>
+  <li><strong>CSS Design</strong> <em>250<sup>95</sup></em></li>
+</ul></div></div>
 </div>
-<span><h3>Burger Menu</h3></span>
-<div class="menuclass">
-	<div class="burger"><img src="burger.jpg"><div>Бургер #1</div></div>
-	<div class="burger"><img src="burger.jpg"><div>Бургер #1</div></div>
-	<div class="burger"><img src="burger.jpg"><div>Бургер #1</div></div>
-	<div class="burger"><img src="burger.jpg"><div>Бургер #1</div></div>
-</div>
+
+<footer>
+	<p>@insta</p>
+</footer>
+
+<script>
+	function f() {
+    document.getElementById("menu").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.menubtn')) {
+    var menu = document.getElementById("menu");
+      if (menu.classList.contains('show')) {
+        menu.classList.remove('show');
+      }
+  }
+}
+</script>
+
 </body>
 </html>
