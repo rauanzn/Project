@@ -40,6 +40,15 @@
     return true; 
 }</script> 
 	<style>
+	
+	.logout a{
+	right: 0;
+	background-color:green;
+	padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;		
+	}
 	@media screen and (max-width: 600px) {
 		input[type=submit] {
     width: 100%;
@@ -97,6 +106,7 @@ th {
 </style>
 </head>
 <body>
+	<div class="logout"><a href="logout.php">Logout</a></div>
 	<?php require_once 'operation.php'; 
 	?>
 	<?php 
@@ -107,6 +117,11 @@ th {
 		 ?>
 
 	<?php 
+	if(!isset($_COOKIE["type"]))
+{
+ header("location:admin.php");
+}
+else{
 		$dbhost = 'localhost:3306';
    		$dbuser = 'root';
    		$dbpass = '';
@@ -144,13 +159,6 @@ th {
 
    			</table>
    		</div>
-   		<?php
-   		function pre_r($array){
-   			echo "<pre>";
-   			print_r($array);
-   			echo "</pre>";
-   		}
-	 ?>
 <form action="operation.php" method="POST" onsubmit="return validsettings()" name="menumaker">
        <div id="data">
        		<input type="hidden" name="id" value="<?php echo $id; ?>">
@@ -167,17 +175,15 @@ th {
             <label>Src</label>
             <input type="text" name="src" value="<?php echo $src ?>" placeholder = "enter path"><br>
         </div>
-		
-	        <div id="buttons">
-	        	<?php 
+			 <?php 
 	        		if ($update == true) {
 	        			echo "<input type='submit' value='update' name='update' style = 'background-color:blue'>";
+
 	        		}
 	        		else{
 	        			echo "<input type='submit' value='submit' name='submit'>";
-	        		}
+	        		}}
 	        	 ?>
-        </div>
      </form>
 </body>
 </html>
