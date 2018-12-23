@@ -35,7 +35,7 @@
 		<div class="card">
 			<div class='name'><?php echo $row['Name']; ?></div>
 			<br><br>
-			<div class="description"><?php echo $row['Description']; ?></div>
+			<div class="description"><?php echo $row['Description']; ?><br><?php echo $row['Consistence']  ;?></div>
 			<br><br>
 			<div class="price"><?php echo $row['Price'];?> tg</div>
 		</div>
