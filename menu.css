@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+.burgers{
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    flex-wrap: wrap;
+}
+.burgers .burger:hover{
+    border: 2px solid black;
+}
+.burgers .burger{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20em;
+    padding: 5px;
+}
+.burgers .burger img{
+    height: 50%;
+    width: 100%;
+}
+.burgers .burger .description{
+    position: relative;
+    height: 50%;
+    background-color: #212121;
+    font-family: 'Pacifico',cursive;
+    font-size: 30px;
+    color:white;
+    border-top: 1px solid #ffe57f;
+}
+.burgers .burger a{
+    position: absolute;
+    display: inline-block;
+    color:white;
+    bottom: 0;
+}
